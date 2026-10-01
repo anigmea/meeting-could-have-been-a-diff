@@ -1,0 +1,26 @@
+{
+  "name": "meeting-could-have-been-a-diff",
+  "version": "0.1.0",
+  "description": "A PR card with receipts. Diff facts plus evidence you supply, nothing it invents.",
+  "type": "module",
+  "author": "anigmea",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": "./src/index.js",
+  "bin": {
+    "meeting-could-have-been-a-diff": "./src/cli.js",
+    "mchbad": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
+  }
+}
